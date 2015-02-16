@@ -1,4 +1,4 @@
-# TL's Yelp Challeng
+# TL's Yelp Challenge
 Author: Maggie Moreno
 
 ## The Ask
