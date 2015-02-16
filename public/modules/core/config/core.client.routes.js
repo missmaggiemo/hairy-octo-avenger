@@ -1,7 +1,7 @@
 'use strict';
 
 // Setting up route
-angular.module('core', ['uiGmapgoogle-maps']).config(['$stateProvider', '$urlRouterProvider', 'uiGmapGoogleMapApiProvider',
+angular.module('core', ['uiGmapgoogle-maps', 'ngGeolocation']).config(['$stateProvider', '$urlRouterProvider', 'uiGmapGoogleMapApiProvider',
 	function($stateProvider, $urlRouterProvider, uiGmapGoogleMapApiProvider) {
 		// Redirect to home view when route not found
 		$urlRouterProvider.otherwise('/');
