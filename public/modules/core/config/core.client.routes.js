@@ -1,8 +1,8 @@
 'use strict';
 
 // Setting up route
-angular.module('core').config(['$stateProvider', '$urlRouterProvider',
-	function($stateProvider, $urlRouterProvider) {
+angular.module('core', ['uiGmapgoogle-maps']).config(['$stateProvider', '$urlRouterProvider', 'uiGmapGoogleMapApiProvider',
+	function($stateProvider, $urlRouterProvider, uiGmapGoogleMapApiProvider) {
 		// Redirect to home view when route not found
 		$urlRouterProvider.otherwise('/');
 
@@ -12,5 +12,12 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 			url: '/',
 			templateUrl: 'modules/core/views/home.client.view.html'
 		});
+
+	  uiGmapGoogleMapApiProvider.configure({
+	   key: 'AIzaSyCM6TkCWq1HEpfXKjkAHMtSzhAD0KSLhZs',
+	    v: '3.17',
+	    libraries: 'weather,geometry,visualization'
+	  });
+
 	}
 ]);

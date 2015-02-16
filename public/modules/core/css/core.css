@@ -18,3 +18,4 @@ body.ng-cloak
 {
 	display: block;
 }
+.angular-google-map-container { height: 400px; }
